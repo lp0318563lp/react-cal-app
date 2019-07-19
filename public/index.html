@@ -5,6 +5,8 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -20,10 +22,52 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      .demo-content{
+        background: #555555;
+      }
+      .demo-content-blue{
+        background-color: blue;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root" class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="demo-content">row1</div>
+        </div>
+        <div class="col-sm-6">
+            <div class="demo-content-blue">row1</div>
+        </div>
+        <div class="col-sm-3">
+          <div class="demo-content">row1</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="demo-content-blue">row2</div>
+        </div>
+        <div class="col-sm-6">
+            <div id="root1"></div>
+        </div>
+        <div class="col-sm-3">
+          <div class="demo-content-blue">row2</div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-3">
+            <div class="demo-content">row3</div>
+          </div>
+          <div class="col-sm-6">
+              <div class="demo-content-blue">row3</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="demo-content">row3</div>
+          </div>
+        </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -34,5 +78,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
